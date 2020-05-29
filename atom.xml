@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>隋志刚的空间</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-05-28T11:30:30.879Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>隋志刚</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>helloworld</title>
+    <link href="http://yoursite.com/2020/05/28/helloworld/"/>
+    <id>http://yoursite.com/2020/05/28/helloworld/</id>
+    <published>2020-05-28T06:54:03.092Z</published>
+    <updated>2020-05-28T11:30:30.879Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;title: this is my first blog&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
