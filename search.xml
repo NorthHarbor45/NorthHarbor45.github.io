@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>helloworld</title>
-    <url>/2020/05/28/helloworld/</url>
-    <content><![CDATA[<p>title: this is my first blog</p>
-<a id="more"></a><!-- toc -->
-<p>[more]<br>@toc</p>
-<h1 id="node-学习入门篇"><a href="#node-学习入门篇" class="headerlink" title="node 学习入门篇"></a>node 学习入门篇</h1><h3 id="滚去学习"><a href="#滚去学习" class="headerlink" title="滚去学习"></a>滚去学习</h3>]]></content>
+    <title>About Me</title>
+    <url>/2020/05/29/about/</url>
+    <content><![CDATA[<blockquote>
+<p>A Programmer, live in Beijing, China.</p>
+</blockquote>
+<p>姓名：隋志刚</p>
+<p>现居：北京</p>
+<p>QQ: <a href="http://wpa.qq.com/msgrd?v=3&uin=535695213&site=qq&menu=yes" target="_blank" rel="noopener">535695213</a></p>
+<p>微信: Wxid578558</p>
+<!-- GitHub: [Shen-Yu](https://github.com/Shen-Yu) 
+twitter: [shenyu1995](https://twitter.com/shenyu1995)-->
+
+<a id="more"></a>
+
+<!-- ![avatar.jpg](https://i.loli.net/2019/12/02/Hw5WJIMKzi1YrU8.jpg) -->
+
+<!-- <img src="https://pic.downk.cc/item/5e739676e83c3a1e3ab4b361.jpg" alt="avatar" width="300" style="border-radius:50%"/> -->
+]]></content>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
   </entry>
 </search>

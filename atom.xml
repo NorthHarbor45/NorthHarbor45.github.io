@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>隋志刚的空间</title>
   
-  
+  <subtitle>技术分享</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-28T11:30:30.879Z</updated>
+  <updated>2020-05-29T08:05:00.363Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,19 +17,29 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>helloworld</title>
-    <link href="http://yoursite.com/2020/05/28/helloworld/"/>
-    <id>http://yoursite.com/2020/05/28/helloworld/</id>
-    <published>2020-05-28T06:54:03.092Z</published>
-    <updated>2020-05-28T11:30:30.879Z</updated>
+    <title>About Me</title>
+    <link href="http://yoursite.com/2020/05/29/about/"/>
+    <id>http://yoursite.com/2020/05/29/about/</id>
+    <published>2020-05-29T05:40:48.626Z</published>
+    <updated>2020-05-29T08:05:00.363Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;title: this is my first blog&lt;/p&gt;
+      &lt;blockquote&gt;
+&lt;p&gt;A Programmer, live in Beijing, China.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;姓名：隋志刚&lt;/p&gt;
+&lt;p&gt;现居：北京&lt;/p&gt;
+&lt;p&gt;QQ: &lt;a href=&quot;http://wpa.qq.com/msgrd?v=3&amp;uin=535695213&amp;site=qq&amp;menu=yes&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;535695213&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;微信: Wxid578558&lt;/p&gt;
+&lt;!-- GitHub: [Shen-Yu](https://github.com/Shen-Yu) 
+twitter: [shenyu1995](https://twitter.com/shenyu1995)--&gt;
     
     </summary>
     
     
+    
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
