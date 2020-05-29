@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-29T08:38:33.901Z</updated>
+  <updated>2020-05-29T08:47:53.685Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hello-world</title>
+    <link href="http://yoursite.com/2020/05/29/hello-world/"/>
+    <id>http://yoursite.com/2020/05/29/hello-world/</id>
+    <published>2020-05-29T08:44:04.000Z</published>
+    <updated>2020-05-29T08:47:53.685Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;C:%5CUsers%5Csuizh%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200529164746292.png&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>About Me</title>
