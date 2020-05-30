@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-29T08:47:53.685Z</updated>
+  <updated>2020-05-30T14:36:48.795Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>hello-world</title>
     <link href="http://yoursite.com/2020/05/29/hello-world/"/>
     <id>http://yoursite.com/2020/05/29/hello-world/</id>
-    <published>2020-05-29T08:44:04.000Z</published>
-    <updated>2020-05-29T08:47:53.685Z</updated>
+    <published>2020-05-29T08:57:26.000Z</published>
+    <updated>2020-05-30T14:36:48.795Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,7 @@
       
         
         
-          &lt;p&gt;&lt;img src=&quot;C:%5CUsers%5Csuizh%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200529164746292.png&quot;
+          &lt;p&gt;&lt;img src=&quot;./hello-world/image-20200529175650922.png&quot;
         
       
     
