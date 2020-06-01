@@ -57,28 +57,6 @@ twitter: [shenyu1995](https://twitter.com/shenyu1995)-->
       </tags>
   </entry>
   <entry>
-    <title>vue-cli3按需引入element-ui报错</title>
-    <url>/2020/06/01/vue-cli3%E6%8C%89%E9%9C%80%E5%BC%95%E5%85%A5element-ui%E6%8A%A5%E9%94%99/</url>
-    <content><![CDATA[<ul>
-<li>报错信息：<ul>
-<li><code>Cannot find module &#39;babel-preset-es2015&#39; from ....</code></li>
-</ul>
-</li>
-<li>解决办法：<ul>
-<li>安装最新的 Babel 编译插件：<code>@babel/preset-env</code></li>
-<li>修改 babel.config.js 文件（也可创建 .babelrc 文件）<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  <span class="string">"presets"</span>: [</span><br><span class="line">    <span class="string">'@vue/app'</span>,</span><br><span class="line">    [<span class="string">"@babel/preset-env"</span>, &#123; <span class="string">"modules"</span>: <span class="literal">false</span> &#125;]],</span><br><span class="line">  <span class="string">"plugins"</span>: [</span><br><span class="line">    [</span><br><span class="line">      <span class="string">"component"</span>,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="string">"libraryName"</span>: <span class="string">"element-ui"</span>,</span><br><span class="line">        <span class="string">"styleLibraryName"</span>: <span class="string">"theme-chalk"</span></span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>vue</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>vue 中 history 模式的配置和打包</title>
     <url>/2020/06/01/vue%E4%B8%ADhistory%E6%A8%A1%E5%BC%8F%E7%9A%84%E9%85%8D%E7%BD%AE%E5%92%8C%E6%89%93%E5%8C%85/</url>
     <content><![CDATA[<ul>
@@ -91,6 +69,28 @@ twitter: [shenyu1995](https://twitter.com/shenyu1995)-->
 <ul>
 <li>base 和 publicPath 路径保持一致，值就是服务器域名下的文件夹目录，比如：<code>www.xxxx.com/aa/</code>，如果是根目录，直接写为 <code>/</code></li>
 <li>配置 history 模式需要服务器支持，服务器具体配置见官网 <a href="https://router.vuejs.org/zh/guide/essentials/history-mode.html#%E5%90%8E%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%BE%8B%E5%AD%90" target="_blank" rel="noopener">后端配置</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vue-cli3按需引入element-ui报错</title>
+    <url>/2020/06/01/vue-cli3%E6%8C%89%E9%9C%80%E5%BC%95%E5%85%A5element-ui%E6%8A%A5%E9%94%99/</url>
+    <content><![CDATA[<ul>
+<li>报错信息：<ul>
+<li><code>Cannot find module &#39;babel-preset-es2015&#39; from ....</code></li>
+</ul>
+</li>
+<li>解决办法：<ul>
+<li>安装最新的 Babel 编译插件：<code>@babel/preset-env</code></li>
+<li>修改 babel.config.js 文件（也可创建 .babelrc 文件）<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  <span class="string">"presets"</span>: [</span><br><span class="line">    <span class="string">'@vue/app'</span>,</span><br><span class="line">    [<span class="string">"@babel/preset-env"</span>, &#123; <span class="string">"modules"</span>: <span class="literal">false</span> &#125;]],</span><br><span class="line">  <span class="string">"plugins"</span>: [</span><br><span class="line">    [</span><br><span class="line">      <span class="string">"component"</span>,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="string">"libraryName"</span>: <span class="string">"element-ui"</span>,</span><br><span class="line">        <span class="string">"styleLibraryName"</span>: <span class="string">"theme-chalk"</span></span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
 </ul>
 ]]></content>
       <categories>
