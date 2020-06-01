@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-30T15:08:37.295Z</updated>
+  <updated>2020-06-01T06:16:01.319Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>hello-world</title>
-    <link href="http://yoursite.com/2020/05/29/hello-world/"/>
-    <id>http://yoursite.com/2020/05/29/hello-world/</id>
-    <published>2020-05-29T08:57:26.000Z</published>
-    <updated>2020-05-30T15:08:37.295Z</updated>
+    <title>小程序后台隐藏后socket无法重新连接</title>
+    <link href="http://yoursite.com/2020/06/01/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%90%8E%E5%8F%B0%E9%9A%90%E8%97%8F%E5%90%8Esocket%E6%97%A0%E6%B3%95%E9%87%8D%E6%96%B0%E8%BF%9E%E6%8E%A5/"/>
+    <id>http://yoursite.com/2020/06/01/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%90%8E%E5%8F%B0%E9%9A%90%E8%97%8F%E5%90%8Esocket%E6%97%A0%E6%B3%95%E9%87%8D%E6%96%B0%E8%BF%9E%E6%8E%A5/</id>
+    <published>2020-06-01T06:15:24.000Z</published>
+    <updated>2020-06-01T06:16:01.319Z</updated>
     
     <summary type="html">
     
@@ -29,14 +29,135 @@
       
         
         
-          &lt;p&gt;&lt;img src=&quot;/2020/05/29/hello-world/image-20200530224634767.png&quot; alt&gt;&lt;/p&gt;
-&lt;img src=&quot;/2020/05/29/hello-world/image-20200530224634767.png&quot;
+          &lt;h3 id=&quot;小程序后台隐藏后-socket-无法重新连接&quot;&gt;&lt;a href=&quot;#小程序后台隐藏后-socket-无法重新连接&quot; class=&quot;headerlink&quot; title=&quot;小程序后台隐藏后 socket 无法重新连接&quot;&gt;&lt;/a&gt;小程序后台隐藏后 socket
         
       
     
     </summary>
     
     
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="小程序" scheme="http://yoursite.com/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue-cli3按需引入element-ui报错</title>
+    <link href="http://yoursite.com/2020/06/01/vue-cli3%E6%8C%89%E9%9C%80%E5%BC%95%E5%85%A5element-ui%E6%8A%A5%E9%94%99/"/>
+    <id>http://yoursite.com/2020/06/01/vue-cli3%E6%8C%89%E9%9C%80%E5%BC%95%E5%85%A5element-ui%E6%8A%A5%E9%94%99/</id>
+    <published>2020-06-01T06:13:09.000Z</published>
+    <updated>2020-06-01T06:14:18.691Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;报错信息：&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Cannot find module &amp;#39;babel-preset-es2015&amp;#39; from ....&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;解决办法：&lt;ul&gt;
+&lt;li&gt;安装最新的
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue 中 history 模式的配置和打包</title>
+    <link href="http://yoursite.com/2020/06/01/vue%E4%B8%ADhistory%E6%A8%A1%E5%BC%8F%E7%9A%84%E9%85%8D%E7%BD%AE%E5%92%8C%E6%89%93%E5%8C%85/"/>
+    <id>http://yoursite.com/2020/06/01/vue%E4%B8%ADhistory%E6%A8%A1%E5%BC%8F%E7%9A%84%E9%85%8D%E7%BD%AE%E5%92%8C%E6%89%93%E5%8C%85/</id>
+    <published>2020-06-01T06:10:46.000Z</published>
+    <updated>2020-06-01T06:12:08.402Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;在使用 vue 进行项目开发中，默认的路由形式是 hash，表现形式就是 url 中始终带有 &lt;code&gt;#&lt;/code&gt; 号，在后台管理类的项目中并不影响使用，但是在特殊场景，比如微信分享的H5链接中，微信会自动拼接参数，由于 &lt;code&gt;#&lt;/code&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>H5环境检测</title>
+    <link href="http://yoursite.com/2020/06/01/H5%E7%8E%AF%E5%A2%83%E6%A3%80%E6%B5%8B/"/>
+    <id>http://yoursite.com/2020/06/01/H5%E7%8E%AF%E5%A2%83%E6%A3%80%E6%B5%8B/</id>
+    <published>2020-06-01T06:07:43.000Z</published>
+    <updated>2020-06-01T06:09:47.305Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;检测是否在客户端App内&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="H5" scheme="http://yoursite.com/tags/H5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微信小程序页面通信</title>
+    <link href="http://yoursite.com/2020/06/01/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%A1%B5%E9%9D%A2%E9%80%9A%E4%BF%A1/"/>
+    <id>http://yoursite.com/2020/06/01/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%A1%B5%E9%9D%A2%E9%80%9A%E4%BF%A1/</id>
+    <published>2020-06-01T05:52:28.000Z</published>
+    <updated>2020-06-01T06:01:21.756Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;[toc]&lt;/p&gt;
+&lt;h4 id=&quot;方式一：通过URL&quot;&gt;&lt;a href=&quot;#方式一：通过URL&quot; class=&quot;headerlink&quot; title=&quot;方式一：通过URL&quot;&gt;&lt;/a&gt;方式一：通过URL&lt;/h4&gt;&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="小程序" scheme="http://yoursite.com/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
   </entry>
   

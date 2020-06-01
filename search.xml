@@ -21,14 +21,100 @@ twitter: [shenyu1995](https://twitter.com/shenyu1995)-->
 ]]></content>
   </entry>
   <entry>
-    <title>hello-world</title>
-    <url>/2020/05/29/hello-world/</url>
-    <content><![CDATA[<p><img src="/2020/05/29/hello-world/image-20200530224634767.png" alt></p>
-<img src="/2020/05/29/hello-world/image-20200530224634767.png" class>
-
-
-
-<p><img src="/2020/05/29/hello-world/image-20200530230827899.png" alt="image-20200530230827899"></p>
+    <title>微信小程序页面通信</title>
+    <url>/2020/06/01/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%A1%B5%E9%9D%A2%E9%80%9A%E4%BF%A1/</url>
+    <content><![CDATA[<p>[toc]</p>
+<h4 id="方式一：通过URL"><a href="#方式一：通过URL" class="headerlink" title="方式一：通过URL"></a>方式一：通过URL</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// A 页面</span></span><br><span class="line">wx.navigateTo(&#123;</span><br><span class="line">  url: <span class="string">'/pages/index/index?id=1'</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// index 页面</span></span><br><span class="line">onLoad(options) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(options.id)  <span class="comment">// 1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="方式二：通过全局变量"><a href="#方式二：通过全局变量" class="headerlink" title="方式二：通过全局变量"></a>方式二：通过全局变量</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// a 页面</span></span><br><span class="line">getApp().PageToPageParams.id = <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// index 页面</span></span><br><span class="line"><span class="built_in">console</span>.log(getApp().PageToPageParams.id) <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
+<h4 id="方式三：通过本地存储"><a href="#方式三：通过本地存储" class="headerlink" title="方式三：通过本地存储"></a>方式三：通过本地存储</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// a 页面</span></span><br><span class="line">wx.setStorageSync(<span class="string">'id'</span>, <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// index 页面</span></span><br><span class="line">wx.getStorageSync(<span class="string">'id'</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="方式四：通过路由栈"><a href="#方式四：通过路由栈" class="headerlink" title="方式四：通过路由栈"></a>方式四：通过路由栈</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// a 页面</span></span><br><span class="line">wx.navigateTo(&#123;</span><br><span class="line">  url: <span class="string">'/pages/index/index'</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// index 页面</span></span><br><span class="line"><span class="keyword">const</span> pages = getCurrentPages()</span><br><span class="line"><span class="keyword">const</span> prePage = pages[pages.length - <span class="number">2</span>]  <span class="comment">// 获取 a 页面 page 对象</span></span><br><span class="line"><span class="built_in">console</span>.log(prePage.data.id)  <span class="comment">// 获取 a 页面中 data 中的id</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>小程序</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>H5环境检测</title>
+    <url>/2020/06/01/H5%E7%8E%AF%E5%A2%83%E6%A3%80%E6%B5%8B/</url>
+    <content><![CDATA[<ul>
+<li><p>检测是否在客户端App内</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">is_app</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> userAgent = navigator.userAgent.toLowerCase()  <span class="comment">//获取UA信息</span></span><br><span class="line">    <span class="keyword">if</span> (userAgent.indexOf(<span class="string">"xxxxxx"</span>) != <span class="number">-1</span>) &#123;    <span class="comment">//判断ua中是否含有和app端约定好的标识xxxxxx</span></span><br><span class="line">      <span class="keyword">return</span> <span class="literal">true</span>  <span class="comment">// 在app内</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="literal">false</span>  <span class="comment">// 不在 app 内</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>检测是否在Android内</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isAndroid</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> userAgent = navigator.userAgent;</span><br><span class="line">  <span class="keyword">return</span> userAgent.indexOf(<span class="string">'Android'</span>) &gt; <span class="number">0</span>;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>检测是否在IOS内</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isAndroid</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> userAgent = navigator.userAgent;</span><br><span class="line">  <span class="keyword">return</span> <span class="regexp">/(iPhone|iPad|iPod)/i</span>.test(userAgent);</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure></li>
+</ul>
 ]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>H5</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vue-cli3按需引入element-ui报错</title>
+    <url>/2020/06/01/vue-cli3%E6%8C%89%E9%9C%80%E5%BC%95%E5%85%A5element-ui%E6%8A%A5%E9%94%99/</url>
+    <content><![CDATA[<ul>
+<li>报错信息：<ul>
+<li><code>Cannot find module &#39;babel-preset-es2015&#39; from ....</code></li>
+</ul>
+</li>
+<li>解决办法：<ul>
+<li>安装最新的 Babel 编译插件：<code>@babel/preset-env</code></li>
+<li>修改 babel.config.js 文件（也可创建 .babelrc 文件）<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  <span class="string">"presets"</span>: [</span><br><span class="line">    <span class="string">'@vue/app'</span>,</span><br><span class="line">    [<span class="string">"@babel/preset-env"</span>, &#123; <span class="string">"modules"</span>: <span class="literal">false</span> &#125;]],</span><br><span class="line">  <span class="string">"plugins"</span>: [</span><br><span class="line">    [</span><br><span class="line">      <span class="string">"component"</span>,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="string">"libraryName"</span>: <span class="string">"element-ui"</span>,</span><br><span class="line">        <span class="string">"styleLibraryName"</span>: <span class="string">"theme-chalk"</span></span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vue 中 history 模式的配置和打包</title>
+    <url>/2020/06/01/vue%E4%B8%ADhistory%E6%A8%A1%E5%BC%8F%E7%9A%84%E9%85%8D%E7%BD%AE%E5%92%8C%E6%89%93%E5%8C%85/</url>
+    <content><![CDATA[<ul>
+<li>在使用 vue 进行项目开发中，默认的路由形式是 hash，表现形式就是 url 中始终带有 <code>#</code> 号，在后台管理类的项目中并不影响使用，但是在特殊场景，比如微信分享的H5链接中，微信会自动拼接参数，由于 <code>#</code> 的原因，路径中会出现两段由 <code>?</code> 拼接的部分，为避免这种情况，形成较为规范的 url 形式，可以采用 history 模式</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 路由文件 index.js</span></span><br><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> VueRouter(&#123;</span><br><span class="line">  mode: <span class="string">'history'</span>,</span><br><span class="line">  base: <span class="string">'/aa/'</span>,</span><br><span class="line">  routes</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// vue.config.js</span></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  publicPath: <span class="string">'/aa/'</span>, <span class="comment">// 基本路径</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>base 和 publicPath 路径保持一致，值就是服务器域名下的文件夹目录，比如：<code>www.xxxx.com/aa/</code>，如果是根目录，直接写为 <code>/</code></li>
+<li>配置 history 模式需要服务器支持，服务器具体配置见官网 <a href="https://router.vuejs.org/zh/guide/essentials/history-mode.html#%E5%90%8E%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%BE%8B%E5%AD%90" target="_blank" rel="noopener">后端配置</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>小程序后台隐藏后socket无法重新连接</title>
+    <url>/2020/06/01/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%90%8E%E5%8F%B0%E9%9A%90%E8%97%8F%E5%90%8Esocket%E6%97%A0%E6%B3%95%E9%87%8D%E6%96%B0%E8%BF%9E%E6%8E%A5/</url>
+    <content><![CDATA[<h3 id="小程序后台隐藏后-socket-无法重新连接"><a href="#小程序后台隐藏后-socket-无法重新连接" class="headerlink" title="小程序后台隐藏后 socket 无法重新连接"></a>小程序后台隐藏后 socket 无法重新连接</h3><ul>
+<li>连接时 fail 回调函数的事件参数：<code>connectSocket:fail:jsapi has no permission,event=createSocketTask,runningState=suspend,permissionMsg=permission ok,detail=network api interrupted in suspend state</code></li>
+<li>错误原因：小程序后台切换前台时，需要时间，这个错误表示连接时小程序还不是处于前台状态，无法连接</li>
+<li>解决办法：在 fail 回调函数中使用递归 进行不断重新连接，直到成功</li>
+<li><strong>注意：</strong>，递归时，应该设置时间差<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">fail: <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'connect fail'</span>, e)</span><br><span class="line">  setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    reconnect()  <span class="comment">// 重连函数</span></span><br><span class="line">  &#125;, <span class="number">300</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>小程序</tag>
+      </tags>
   </entry>
 </search>
